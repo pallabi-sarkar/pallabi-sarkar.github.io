@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    background: white;
+}
+
+h1 {
+    text-align: center;
+    color: #1f3c88;
+}
+
+h2 {
+    color: #333;
+    margin-top: 30px;
+}
+
+.funnel {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.step {
+    background-color: #e3f2fd;
+    padding: 20px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 8px;
+}
+
+.purchase {
+    background-color: #c8e6c9;
+}
+
+.arrow {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.drop {
+    color: red;
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #fff3cd;
+    padding: 10px;
+    border-left: 5px solid orange;
+}
