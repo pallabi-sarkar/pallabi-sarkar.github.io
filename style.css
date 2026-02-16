@@ -94,6 +94,47 @@ section {
 .cta a:hover {
     background-color: #0f5ed7;
 }
+.tools-section {
+    padding: 60px 20px;
+    background-color: #f4f6f9;
+    text-align: center;
+}
+
+.tools-section h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.tools-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.tool-category {
+    background: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.tool-category h3 {
+    margin-bottom: 15px;
+    color: #0073e6;
+}
+
+.tool-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tool-category li {
+    margin: 8px 0;
+    font-size: 15px;
+}
 
 
 
