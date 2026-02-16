@@ -136,15 +136,16 @@ section {
     font-size: 15px;
 }
 .about {
-    max-width: 800px;
+    width: 70%;
     margin: 50px auto;
-    padding: 20px;
-    line-height: 1.6;
+    padding: 18px;
+    line-height: 1.8;
 }
 
 .about h1 {
     font-size: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .about h3 {
