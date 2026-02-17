@@ -205,6 +205,19 @@ button {
 button:hover {
     background-color: #163a5f;
 }
+section {
+    margin-top: 50px;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+.insight {
+    margin-top: 15px;
+    font-style: italic;
+    color: #555;
+}
 
 
 
