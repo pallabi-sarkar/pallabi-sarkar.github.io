@@ -1,0 +1,48 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.kpi-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.kpi-box {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+    padding: 30px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.kpi-box p {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+section img {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+}
