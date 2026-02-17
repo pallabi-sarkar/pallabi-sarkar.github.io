@@ -46,3 +46,8 @@ section img {
     width: 100%;
     border: 1px solid #e0e0e0;
 }
+.insight {
+    margin-top: 15px;
+    font-style: italic;
+    color: #555;
+}
