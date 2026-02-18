@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 75%;
     margin: auto;
     padding: 40px 0;
 }
@@ -18,20 +18,21 @@ h1 {
 }
 
 h2 {
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 15px;
 }
 
 .kpi-section {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    margin-bottom: 50px;
 }
 
 .kpi-box {
     flex: 1;
     border: 1px solid #e0e0e0;
-    padding: 30px;
+    padding: 25px;
     text-align: center;
     background-color: #fafafa;
 }
@@ -42,12 +43,19 @@ h2 {
     margin-top: 10px;
 }
 
-section img {
-    width: 100%;
+.chart-section {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.chart-section img {
+    width: 70%;
+    max-width: 800px;
     border: 1px solid #e0e0e0;
 }
-.insight {
-    margin-top: 15px;
-    font-style: italic;
-    color: #555;
+
+.case-study {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 2px solid #e0e0e0;
 }
