@@ -5,6 +5,8 @@ body {
     margin: auto;
     max-width: 1000px;
     padding: 20px;
+    background: 
+        url("images/bg.jpg");
 }
 
 h1 {
