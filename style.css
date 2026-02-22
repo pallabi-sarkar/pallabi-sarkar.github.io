@@ -9,7 +9,6 @@ body {
     url("images/bg1.jpg");
     background-size: cover; 
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 h1 {
