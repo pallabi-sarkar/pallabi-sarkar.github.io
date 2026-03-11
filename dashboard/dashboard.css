@@ -23,37 +23,8 @@ h2 {
     margin-bottom: 15px;
 }
 
-.kpi-section {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 50px;
-}
 
-.kpi-box {
-    flex: 1;
-    border: 1px solid #e0e0e0;
-    padding: 25px;
-    text-align: center;
-    background-color: #fafafa;
-}
 
-.kpi-box p {
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.chart-section {
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-.chart-section img {
-    width: 70%;
-    max-width: 800px;
-    border: 1px solid #e0e0e0;
-}
 
 .case-study {
     margin-top: 80px;
