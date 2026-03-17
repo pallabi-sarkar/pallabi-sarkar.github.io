@@ -9,9 +9,16 @@
 <body>
 
 <div class="container">
-
+<header>
 <h1>E-commerce Revenue Analysis Dashboard</h1>
-
+</header>
+<div class="download-section">
+    <a href="ecommerce_revenue_analysis.xlsx" 
+       class="download-btn" 
+       download>
+       Download Excel Dashboard
+    </a>
+</div>
 <h2>Project Overview</h2>
 <p>
 This project analyzes e-commerce order data to understand revenue performance,
@@ -24,6 +31,13 @@ categories.
 <p>
 The dataset contains order-level information including order date, category,
 region, quantity sold, and revenue.
+</p>
+
+<h2>Data Cleaning</h2>
+<p>
+    During validation, the "Profit" column was identified as revenue
+(unit price × quantity). The column was renamed to ensure accurate
+business interpretation.
 </p>
 
 <h2>Dashboard</h2>
@@ -39,19 +53,34 @@ region, quantity sold, and revenue.
 <li>Some sub-categories dominate revenue contribution.</li>
 </ul>
 
+<h2>Business Recommendations</h2>
+
+<ul>
+
+<li>Increase stock and marketing for high-performing categories like Technology.</li>
+
+<li>Focus marketing campaigns in the West region to maximize ROI.</li>
+
+<li>Prepare inventory and promotions ahead of Q4 to capture peak demand.</li>
+
+<li>Identify low-performing categories and optimize pricing or discontinue them.</li>
+
+</ul>
+
 <h2>Tools Used</h2>
 
 <ul>
 <li>Microsoft Excel</li>
 <li>Pivot Tables</li>
 <li>Interactive Dashboard</li>
+<li>Data Cleaning</li>
 </ul>
 
-<h2>Download Dataset</h2>
-
-<a href="orders-data.xlsx">Download Excel Dataset</a>
-
 </div>
+<footer>
 
+<p>Project created by Pallabi Sarkar</p>
+
+</footer>
 </body>
 </html>

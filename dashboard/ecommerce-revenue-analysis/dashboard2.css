@@ -11,7 +11,10 @@ margin:auto;
 background:white;
 padding:40px;
 }
-
+header{
+text-align:center;
+margin-bottom:30px;
+}
 h1{
 color:#1a73e8;
 }
@@ -28,4 +31,21 @@ margin-top:20px;
 
 ul{
 line-height:1.8;
+}
+.download-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.download-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+footer{
+text-align:center;
+margin-top:40px;
+color:#777;
 }
