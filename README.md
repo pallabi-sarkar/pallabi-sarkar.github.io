@@ -223,19 +223,23 @@ Use customer segmentation strategies to create age-group-specific marketing camp
 
 ### Executive Summary
 
-(Add Screenshot Here)
+<img width="1417" height="778" alt="Executive_Summary" src="https://github.com/user-attachments/assets/6a186ef1-b6eb-4d2b-a478-3eec9978aa4b" />
+
 
 ### Product Analysis
 
-(Add Screenshot Here)
+<img width="1291" height="736" alt="Product_Analysis" src="https://github.com/user-attachments/assets/95123dcf-9d53-4ade-aad2-738b4b50c26e" />
+
 
 ### Customer Analysis
 
-(Add Screenshot Here)
+<img width="1268" height="722" alt="Customer_Analysis" src="https://github.com/user-attachments/assets/d9c2d363-5798-46ec-8c4c-59287d7f0719" />
+
 
 ### Sales Trends and Recommendations
 
-(Add Screenshot Here)
+<img width="1253" height="717" alt="Sales_trends" src="https://github.com/user-attachments/assets/6b1d4cf8-0529-4b31-96d9-ec97d8ea89d6" />
+
 
 ---
 
