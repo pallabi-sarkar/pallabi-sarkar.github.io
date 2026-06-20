@@ -53,6 +53,21 @@ ul{
     border-radius:20px;
 }
 
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    opacity:0.9;
+}
+
 .dashboard-image{
     width:100%;
     margin-top:20px;
