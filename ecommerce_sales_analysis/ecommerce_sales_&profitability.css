@@ -1,0 +1,286 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.8;
+
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+
+    background:linear-gradient(135deg,#0f4c81,#1d9bf0);
+
+    color:white;
+
+    text-align:center;
+
+    padding:70px 20px;
+
+}
+
+header h1{
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+header p{
+
+    font-size:20px;
+
+    opacity:.9;
+
+}
+
+/* ==========================
+   SECTION
+========================== */
+
+section{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:50px auto;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:12px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+section h2{
+
+    color:#0f4c81;
+
+    margin-bottom:20px;
+
+    font-size:30px;
+
+}
+
+section p{
+
+    font-size:17px;
+
+}
+
+/* ==========================
+   LIST
+========================== */
+
+ul{
+
+    padding-left:25px;
+
+}
+
+li{
+
+    margin-bottom:10px;
+
+}
+
+/* ==========================
+   TOOLS
+========================== */
+
+.tools{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.tools span{
+
+    background:#0f4c81;
+
+    color:white;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.tools span:hover{
+
+    background:#1d9bf0;
+
+    transform:translateY(-4px);
+
+}
+
+/* ==========================
+   DASHBOARD IMAGES
+========================== */
+
+.dashboard-image{
+
+    width:100%;
+
+    margin-top:30px;
+
+    border-radius:10px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    transition:.35s;
+
+}
+
+.dashboard-image:hover{
+
+    transform:scale(1.02);
+
+}
+
+/* ==========================
+   INSIGHT CARDS
+========================== */
+
+.card{
+
+    background:#f8fbff;
+
+    border-left:6px solid #1d9bf0;
+
+    margin:25px 0;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+}
+
+.card h3{
+
+    color:#0f4c81;
+
+    margin-bottom:12px;
+
+    font-size:22px;
+
+}
+
+.card p{
+
+    color:#555;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    text-align:center;
+
+    background:#0f4c81;
+
+    color:white;
+
+    padding:25px;
+
+    margin-top:60px;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+header h1{
+
+    font-size:32px;
+
+}
+
+header p{
+
+    font-size:17px;
+
+}
+
+section{
+
+    width:95%;
+
+    padding:25px;
+
+}
+
+section h2{
+
+    font-size:26px;
+
+}
+
+.card h3{
+
+    font-size:20px;
+
+}
+
+.tools{
+
+    justify-content:center;
+
+}
+
+}
