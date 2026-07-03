@@ -288,13 +288,18 @@ section h2{
     display:inline-block;
     margin-top:15px;
     padding:12px 25px;
-    background:#2563eb;
+    background:#0f4c81;
     color:white;
     text-decoration:none;
     border-radius:8px;
     font-weight:bold;
+    transition:.3s;
 }
 
-.btn:hover{
-    opacity:0.9;
+.btn span:hover{
+
+    background:#1d9bf0;
+
+    transform:translateY(-4px);
+
 }
