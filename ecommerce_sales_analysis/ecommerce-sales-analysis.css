@@ -152,6 +152,57 @@ li{
     transform:translateY(-4px);
 
 }
+.summary-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    margin:35px 0;
+
+}
+
+.summary-card{
+
+    background:linear-gradient(135deg,#0b5394,#1c7ed6);
+
+    color:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+.summary-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.summary-card h3{
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+.summary-card p{
+
+    color:white;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
 
 /* ==========================
    DASHBOARD IMAGES
