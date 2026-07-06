@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Performance Analysis Using Power BI</title>
+
+    <link rel="stylesheet" href="financial-performance-analysis.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Financial Performance Analysis Using Power BI</h1>
+
+<p>
+A comprehensive business intelligence project that analyzes financial performance
+across products, countries, customer segments, manufacturing costs, and discount
+strategies. The objective of this project is to identify key revenue drivers,
+profitability trends, and actionable business opportunities through interactive
+Power BI dashboards.
+</p>
+
+</header>
+
+<section>
+
+<h2>Business Problem</h2>
+
+<p>
+
+Business leaders need a clear understanding of which products, countries, and
+customer segments contribute most to revenue and profitability. They also need
+to evaluate whether manufacturing costs and discount strategies are improving
+or reducing financial performance.
+
+Without an executive dashboard, management must manually analyze multiple reports,
+making strategic decision-making slow and inefficient.
+
+</p>
+
+</section>
+
+<section>
+
+<h2>Project Objectives</h2>
+
+<ul>
+
+<li>Analyze overall financial performance.</li>
+
+<li>Identify the highest performing products.</li>
+
+<li>Evaluate country-wise sales and profitability.</li>
+
+<li>Analyze customer segment performance.</li>
+
+<li>Understand manufacturing cost impact on profit.</li>
+
+<li>Measure the effectiveness of discount strategies.</li>
+
+<li>Provide actionable business recommendations.</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Dataset Overview</h2>
+
+<p>
+
+This project uses Microsoft's Financial Sample Dataset.
+
+The dataset contains transactional financial information including products,
+customer segments, countries, manufacturing costs, discounts, sales,
+gross sales, profit, COGS and monthly transactions.
+700 Rows, 6 Products, 5 Countries, 5 Customer Segments, and 2 Years of data (2013–2014).
+</p>
+
+</section>
+
+<section>
+
+<h2>Business Questions</h2>
+
+<div class="questions">
+
+<div class="question-card">
+
+<h3>Executive Dashboard</h3>
+
+<ul>
+
+<li>How much revenue has the company generated?</li>
+
+<li>What is the overall profit margin?</li>
+
+<li>How are sales changing over time?</li>
+
+</ul>
+
+</div>
+
+<div class="question-card">
+
+<h3>Product Analysis</h3>
+
+<ul>
+
+<li>Which product generates the highest sales?</li>
+
+<li>Which product generates the highest profit?</li>
+
+<li>Which product has the highest profit margin?</li>
+
+<li>Which product sells the most units?</li>
+
+</ul>
+
+</div>
+
+<div class="question-card">
+
+<h3>Country Analysis</h3>
+
+<ul>
+
+<li>Which country generates the highest revenue?</li>
+
+<li>Which country contributes the highest profit?</li>
+
+<li>Which country should receive more investment?</li>
+
+</ul>
+
+</div>
+
+<div class="question-card">
+
+<h3>Customer Segment Analysis</h3>
+
+<ul>
+
+<li>Which customer segment is most profitable?</li>
+
+<li>Which segment purchases the highest volume?</li>
+
+<li>Which segment receives the highest discounts?</li>
+
+</ul>
+
+</div>
+
+<div class="question-card">
+
+<h3>Cost Analysis</h3>
+
+<ul>
+
+<li>Is manufacturing cost affecting profitability?</li>
+
+<li>Which product has the highest COGS?</li>
+
+<li>Which products maintain healthy margins?</li>
+
+</ul>
+
+</div>
+
+<div class="question-card">
+
+<h3>Discount Analysis</h3>
+
+<ul>
+
+<li>Do higher discounts increase profit?</li>
+
+<li>Which discount band performs best?</li>
+
+<li>Are discounts reducing profitability?</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Executive Summary</h2>
+
+<div class="summary-grid">
+
+<div class="summary-card">
+
+<h3>Total Sales</h3>
+
+<p>$118.73 Million</p>
+
+</div>
+
+<div class="summary-card">
+
+<h3>Gross Sales</h3>
+
+<p>$127.93 Million</p>
+
+</div>
+
+<div class="summary-card">
+
+<h3>Total Profit</h3>
+
+<p>$16.89 Million</p>
+
+</div>
+
+<div class="summary-card">
+
+<h3>Units Sold</h3>
+
+<p>1.13 Million</p>
+
+</div>
+
+<div class="summary-card">
+
+<h3>Profit Margin</h3>
+
+<p>14%</p>
+
+</div>
+
+</div>
+
+<p>
+
+The company generated over <strong>$118 million</strong> in revenue while
+maintaining an overall profit margin of approximately
+<strong>14%</strong>. Sales increased steadily throughout the year,
+with a noticeable peak during October, indicating strong seasonal demand.
+
+</p>
+
+</section>
+
+<section>
+
+<h2>Dashboard Preview</h2>
+
+<div class="dashboard-gallery">
+
+<img src="executive-dashboard.png"
+alt="Executive Dashboard">
+
+<img src="product-analysis.png"
+alt="Product Analysis">
+
+<img src="country-performance.png"
+alt="Country Performance">
+
+<img src="customer-segment.png"
+alt="Customer Segment Analysis">
+
+<img src="cost-analysis.png"
+alt="Cost Analysis">
+
+<img src="discount-analysis.png"
+alt="Discount Analysis">
+
+</div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- PRODUCT PERFORMANCE -->
+<!-- ====================================================== -->
+
+<section>
+
+<h2>Product Performance Analysis</h2>
+
+<p>
+
+This dashboard evaluates product-level performance by comparing sales,
+profit, profit margin, and units sold. The objective is to identify
+the company's strongest and weakest performing products and determine
+where management should focus future investments.
+
+</p>
+
+<h3>Key Findings</h3>
+
+<ul>
+
+<li>
+<strong>Paseo</strong> generated the highest revenue
+($33.01M), making it the company's strongest revenue-driving product.
+</li>
+
+<li>
+Paseo also generated the highest overall profit
+($4.79M), indicating strong financial performance.
+</li>
+
+<li>
+
+<strong>Amarilla</strong> achieved the highest profit margin
+(15.88%), demonstrating excellent profitability despite lower sales.
+
+</li>
+
+<li>
+
+Paseo sold over
+<strong>338K units</strong>, making it the highest-volume product.
+
+</li>
+
+<li>
+
+Velo generated the lowest profit margin, suggesting opportunities
+to improve pricing or reduce costs.
+
+</li>
+
+</ul>
+
+<h3>Business Insight</h3>
+
+<p>
+
+Paseo should remain the company's flagship product because it leads
+sales, profit, and units sold. However, Amarilla demonstrates the
+highest profitability, suggesting it deserves additional marketing
+investment to maximize margins.
+
+</p>
+
+</section>
+
+
+<!-- ====================================================== -->
+<!-- COUNTRY PERFORMANCE -->
+<!-- ====================================================== -->
+
+<section>
+
+<h2>Country Performance Analysis</h2>
+
+<p>
+
+Country-level analysis helps management understand where revenue and
+profit are being generated and identify geographic markets with
+future growth potential.
+
+</p>
+
+<h3>Key Findings</h3>
+
+<ul>
+
+<li>
+
+Canada and the United States generated the highest sales revenue.
+
+</li>
+
+<li>
+
+France contributed the highest overall profit.
+
+</li>
+
+<li>
+
+Mexico generated comparatively lower sales and profit than other
+countries.
+
+</li>
+
+<li>
+
+Sales performance remains relatively balanced across all five
+countries, indicating healthy geographic diversification.
+
+</li>
+
+</ul>
+
+<h3>Business Insight</h3>
+
+<p>
+
+Canada and the United States should remain priority markets due to
+their strong revenue contribution, while France demonstrates excellent
+profitability. Mexico represents an opportunity for targeted sales
+campaigns and market expansion.
+
+</p>
+
+</section>
+
+
+<!-- ====================================================== -->
+<!-- CUSTOMER SEGMENT -->
+<!-- ====================================================== -->
+
+<section>
+
+<h2>Customer Segment Analysis</h2>
+
+<p>
+
+Customer segmentation identifies which customer groups generate
+the greatest financial value and where marketing resources should
+be allocated.
+
+</p>
+
+<h3>Key Findings</h3>
+
+<ul>
+
+<li>
+
+Government customers generated over
+<strong>$11.4M</strong> in profit.
+
+</li>
+
+<li>
+
+Government customers purchased the largest number of units
+(approximately 470K).
+
+</li>
+
+<li>
+
+Government customers also received the highest total discounts.
+
+</li>
+
+<li>
+
+Enterprise customers generated negative profit, indicating poor
+profitability.
+
+</li>
+
+</ul>
+
+<h3>Business Insight</h3>
+
+<p>
+
+Government organizations represent the company's most valuable
+customer segment and should remain a strategic priority.
+Enterprise customers require pricing and discount reviews to improve
+profitability.
+
+</p>
+
+</section>
+
+
+<!-- ====================================================== -->
+<!-- COST ANALYSIS -->
+<!-- ====================================================== -->
+
+<section>
+
+<h2>Cost Analysis</h2>
+
+<p>
+
+Manufacturing costs and Cost of Goods Sold (COGS) directly affect
+overall profitability. This analysis evaluates whether high production
+costs reduce financial performance.
+
+</p>
+
+<h3>Key Findings</h3>
+
+<ul>
+
+<li>
+
+Paseo recorded the highest Cost of Goods Sold
+(approximately $28M).
+
+</li>
+
+<li>
+
+Despite high costs, Paseo remained the most profitable product.
+
+</li>
+
+<li>
+
+Amarilla achieved the highest profit margin,
+indicating efficient cost management.
+
+</li>
+
+<li>
+
+Higher manufacturing prices do not always result in lower profit.
+
+</li>
+
+</ul>
+
+<h3>Business Insight</h3>
+
+<p>
+
+Although Paseo incurs the highest production costs, its strong sales
+volume offsets these expenses. Profitability depends on balancing
+pricing, manufacturing costs, and demand rather than focusing on
+cost reduction alone.
+
+</p>
+
+</section>
+
+
+<!-- ====================================================== -->
+<!-- DISCOUNT ANALYSIS -->
+<!-- ====================================================== -->
+
+<section>
+
+<h2>Discount Analysis</h2>
+
+<p>
+
+Discount strategies can increase sales but may reduce profitability.
+This dashboard evaluates whether discounts create long-term business
+value.
+
+</p>
+
+<h3>Key Findings</h3>
+
+<ul>
+
+<li>
+
+Low discount products generated the highest total profit.
+
+</li>
+
+<li>
+
+Products receiving larger discounts did not consistently produce
+higher profits.
+
+</li>
+
+<li>
+
+Paseo received the highest total discounts because it generated
+the largest sales volume.
+
+</li>
+
+<li>
+
+The relationship between discounts and sales is positive,
+but excessive discounts reduce profit margins.
+
+</li>
+
+</ul>
+
+<h3>Business Insight</h3>
+
+<p>
+
+The analysis suggests that moderate discount strategies are more
+effective than aggressive discounting. Maintaining healthy margins
+while offering competitive discounts will improve long-term
+profitability.
+
+</p>
+
+</section>
+
+
+
+<!-- ====================================================== -->
+<!-- OVERALL BUSINESS INSIGHTS -->
+<!-- ====================================================== -->
+
+<section>
+
+<h2>Overall Business Insights</h2>
+
+<div class="insights">
+
+<div class="insight-card">
+
+<h3>Revenue Driver</h3>
+
+<p>
+
+Paseo is the company's primary revenue generator and should remain
+a strategic product.
+
+</p>
+
+</div>
+
+<div class="insight-card">
+
+<h3>Highest Margin Product</h3>
+
+<p>
+
+Amarilla delivers the strongest profit margin, making it an attractive
+candidate for future marketing investment.
+
+</p>
+
+</div>
+
+<div class="insight-card">
+
+<h3>Best Customer Segment</h3>
+
+<p>
+
+Government customers contribute the largest share of profit and
+sales volume.
+
+</p>
+
+</div>
+
+<div class="insight-card">
+
+<h3>Geographic Opportunity</h3>
+
+<p>
+
+Mexico presents opportunities for sales growth through targeted
+marketing initiatives.
+
+</p>
+
+</div>
+
+<div class="insight-card">
+
+<h3>Cost Management</h3>
+
+<p>
+
+High manufacturing costs alone do not determine profitability.
+Sales volume and pricing strategy are equally important.
+
+</p>
+
+</div>
+
+<div class="insight-card">
+
+<h3>Discount Strategy</h3>
+
+<p>
+
+Smaller discounts produce healthier margins than aggressive
+discount campaigns.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- EXECUTIVE RECOMMENDATIONS -->
+<!-- ====================================================== -->
+
+<section>
+
+<h2>Executive Recommendations</h2>
+
+<div class="recommendation">
+
+<h3>1. Continue Investing in Paseo</h3>
+
+<p>
+Paseo consistently generates the highest revenue, profit, and sales volume.
+Management should prioritize inventory planning, product availability, and
+marketing campaigns to maintain its market leadership.
+</p>
+
+</div>
+
+<div class="recommendation">
+
+<h3>2. Promote High-Margin Products</h3>
+
+<p>
+Although Amarilla generates lower sales than Paseo, it delivers the highest
+profit margin. Increasing its market visibility could improve overall
+profitability.
+</p>
+
+</div>
+
+<div class="recommendation">
+
+<h3>3. Improve Enterprise Segment Performance</h3>
+
+<p>
+Enterprise customers currently generate negative profit. Management should
+review pricing strategies, discount policies, and customer acquisition costs
+for this segment.
+</p>
+
+</div>
+
+<div class="recommendation">
+
+<h3>4. Expand in High-Performing Countries</h3>
+
+<p>
+Canada, France, and the United States consistently deliver strong financial
+performance. These markets present opportunities for additional investment
+and expansion.
+</p>
+
+</div>
+
+<div class="recommendation">
+
+<h3>5. Optimize Discount Strategy</h3>
+
+<p>
+The analysis shows that excessive discounts do not always increase
+profitability. A controlled discount strategy can protect profit margins while
+maintaining healthy sales growth.
+</p>
+
+</div>
+
+<div class="recommendation">
+
+<h3>6. Monitor Manufacturing Costs</h3>
+
+<p>
+Manufacturing cost alone does not determine profitability. Management should
+focus on balancing production costs with pricing strategy and demand.
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- ====================================================== -->
+<!-- BUSINESS IMPACT -->
+<!-- ====================================================== -->
+
+<section>
+
+<h2>Business Impact</h2>
+
+<p>
+
+This dashboard enables executives to monitor financial performance through a
+single interactive report. Decision-makers can quickly identify high-performing
+products, profitable customer segments, country-level opportunities, and cost
+drivers without manually reviewing multiple reports.
+
+</p>
+
+</section>
+
+
+
+<!-- ====================================================== -->
+<!-- TOOLS -->
+<!-- ====================================================== -->
+
+<section>
+
+<h2>Tools & Technologies</h2>
+
+<div class="skill-grid">
+
+<span>Power BI</span>
+
+<span>Power Query</span>
+
+<span>DAX</span>
+
+<span>Excel</span>
+
+<span>Data Cleaning</span>
+
+<span>Data Modeling</span>
+
+<span>Business Analysis</span>
+
+<span>Financial Analytics</span>
+
+<span>Dashboard Design</span>
+
+<span>Data Visualization</span>
+
+</div>
+
+</section>
+
+
+
+<!-- ====================================================== -->
+<!-- DAX -->
+<!-- ====================================================== -->
+
+<section>
+
+<h2>DAX Measures Used</h2>
+
+<ul>
+
+<li>Total Sales</li>
+
+<li>Total Gross Sales</li>
+
+<li>Total Profit</li>
+
+<li>Total Units Sold</li>
+
+<li>Total Discounts</li>
+
+<li>Profit Margin %</li>
+
+<li>Total COGS</li>
+
+</ul>
+
+</section>
+
+
+
+<!-- ====================================================== -->
+<!-- SKILLS -->
+<!-- ====================================================== -->
+
+<section>
+
+<h2>Skills Demonstrated</h2>
+
+<div class="skill-grid">
+
+<span>Business Understanding</span>
+
+<span>Financial Performance Analysis</span>
+
+<span>Executive Dashboard Design</span>
+
+<span>KPI Development</span>
+
+<span>Profitability Analysis</span>
+
+<span>Cost Analysis</span>
+
+<span>Product Analysis</span>
+
+<span>Country Analysis</span>
+
+<span>Customer Segmentation</span>
+
+<span>Business Recommendations</span>
+
+</div>
+
+</section>
+
+
+
+<!-- ====================================================== -->
+<!-- KEY LEARNINGS -->
+<!-- ====================================================== -->
+
+<section>
+
+<h2>Key Learnings</h2>
+
+<ul>
+
+<li>Designed an executive-level financial dashboard using Power BI.</li>
+
+<li>Developed KPIs to evaluate sales, profit, cost, and profitability.</li>
+
+<li>Performed product, customer, country, cost, and discount analysis.</li>
+
+<li>Translated data into business insights and strategic recommendations.</li>
+
+<li>Improved business understanding by connecting dashboard metrics to
+real-world business decisions.</li>
+
+</ul>
+
+</section>
+
+
+
+<footer>
+
+<h2>Project Conclusion</h2>
+
+<p>
+
+This Financial Performance Analysis project demonstrates how interactive Power
+BI dashboards can transform raw financial data into actionable business
+insights. By combining KPI development, financial analysis, data visualization,
+and executive recommendations, the project supports informed strategic
+decision-making and highlights practical Business Analyst skills.
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
