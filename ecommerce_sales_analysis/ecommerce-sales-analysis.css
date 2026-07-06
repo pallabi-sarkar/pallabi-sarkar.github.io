@@ -202,31 +202,42 @@ li{
     font-weight:700;
 
 }
+.dashboard-gallery{
 
+    display:grid;
 
-/* ==========================
-   DASHBOARD IMAGES
-========================== */
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
 
-.dashboard-image{
-
-    width:100%;
+    gap:30px;
 
     margin-top:30px;
 
-    border-radius:10px;
+}
 
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
+.dashboard-gallery img{
+
+    width:100%;
+
+    border-radius:15px;
+
+    border:1px solid #ddd;
 
     transition:.35s;
 
-}
+    cursor:pointer;
 
-.dashboard-image:hover{
-
-    transform:scale(1.02);
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
 
 }
+
+.dashboard-gallery img:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
 
 /* ==========================
    INSIGHT CARDS
