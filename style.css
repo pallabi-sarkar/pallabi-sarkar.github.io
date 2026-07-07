@@ -124,12 +124,20 @@ section {
 }
 
 .tool-category {
-    background: ;
     padding: 25px;
     width: 250px;
     border-radius: 10px;
     background-color: rgba(196, 179, 179, 0.1);
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.project-card {
+    padding: 25px;
+    width: 750px;
+    border-radius: 10px;
+    background-color: rgba(196, 179, 179, 0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
 }
 
 .tool-category h3 {
